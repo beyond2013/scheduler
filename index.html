@@ -4,22 +4,61 @@
   <meta charset="utf-8">
   <title>droppable demo</title>
 	<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/custom.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <script src="./jquery/js/jquery.js"></script>
   <script src="./jquery-ui/js/jquery-ui.js"></script>
 </head>
 <body>
 
 	<div class="container">
-		<div class="row">
-			<div class="col-4" id="droppable"> One </div> <!-- .col-md-4 -->
-			<div class="col-4" id="droppable"> Two</div> <!-- .col-md-4 -->
-			<div class="col-4" id="droppable"> Three</div> <!-- .col-4 -->
+		<div class="row" >
+			<div class="col-2" >Class-Time</div>
+			<div class="col-2" >Monday</div> <!-- .col-2 -->
+			<div class="col-2" >Tuesday</div> <!-- .col-2 -->
+			<div class="col-2" >Wednesday</div> <!-- .col-2 -->
+			<div class="col-2" >Thursday</div> <!-- .col-2 -->
+			<div class="col-2" >Friday</div> <!-- .col-2 -->
 		</div> <!-- .row -->
-	</div> <!-- .container -->
-			<div class="col-2" id="draggable"> Drag </div> <!-- .col-md-2 -->
-	<div class="row">
 
-	</div>
+		<div class="row">
+			<div class="col-2" id="droppable">09:30 to 11:00</div>
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+		</div>
+
+		<div class="row">
+			<div class="col-2" id="droppable">11:00 to 12:30</div>
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+		</div>
+
+		<div class="row">
+			<div class="col-2" id="droppable">01:30 to 03:00</div>
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+		</div>
+
+		<div class="row">
+			<div class="col-2" id="droppable">03:00 to 4:30</div>
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+			<div class="col-2" id="droppable"></div> <!-- .col-2 -->
+		</div>
+
+			<div class="col-2" id="draggable"> Drag </div> <!-- .col-md-2 -->
+	</div> <!-- .container -->
+
 	<script>
 		$( "#draggable" ).draggable();
     $( "#droppable" ).droppable({

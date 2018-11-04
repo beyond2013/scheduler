@@ -1,0 +1,8 @@
+.col-2{
+	border-style:solid;
+	height:50px;
+}
+
+#draggable{
+	border-style:dotted;
+}
