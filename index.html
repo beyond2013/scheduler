@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>droppable demo</title>
+	<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="./jquery/js/jquery.js"></script>
+  <script src="./jquery-ui/js/jquery-ui.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-4" id="droppable"> One </div> <!-- .col-md-4 -->
+			<div class="col-4" id="droppable"> Two</div> <!-- .col-md-4 -->
+			<div class="col-4" id="droppable"> Three</div> <!-- .col-4 -->
+		</div> <!-- .row -->
+	</div> <!-- .container -->
+			<div class="col-2" id="draggable"> Drag </div> <!-- .col-md-2 -->
+	<div class="row">
+
+	</div>
+	<script>
+		$( "#draggable" ).draggable();
+    $( "#droppable" ).droppable({
+	    drop: function() {
+		    alert( "dropped" );
+	    }
+    });
+
+	</script>
+</body>
+</html>
