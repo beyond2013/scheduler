@@ -1,8 +1,12 @@
 .col-2{
 	border-style:solid;
 	height:50px;
+	padding: 5px;
 }
 
 #draggable{
 	border-style:dotted;
+	height:45px;
+	color: red;
+	text-align: center;
 }
